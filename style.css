@@ -93,7 +93,7 @@ input[type='number'] {
 }
 
 .calculator .mortgageCalculator .simbol input[type="number"] {
-    width: 252px;
+    width: 243px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 5px;
@@ -202,7 +202,6 @@ input[type='number'] {
 .radio2 {
     margin-top: 10px;
 }
-
 
 .mortgageCalculator,
 .term,
@@ -318,7 +317,7 @@ button img {
 
 .afterResult .mountly span,
 .afterResult .mountly input {
-    font-size: 50px;
+    font-size: 40px;
     color: #d9db30;
     background-color: #0c202b;
     border: none;
@@ -370,7 +369,7 @@ input[type=number]::-webkit-inner-spin-button {
     }
     
     .calculator .mortgageCalculator .simbol input[type="number"] {
-        width: 89%;
+        width: 88.4%;
     }
 
     .result {
