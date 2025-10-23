@@ -14,7 +14,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <title>Kalkulator Pembayaran Pinjaman</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -34,59 +34,58 @@
     <!--Calculator-->
     <div class="calculator">
       
-      <strong>Mortgage Calculator</strong> <u><input type="button" id="clear" value="Clear All" onclick="clear()"></u>
+      <strong>Kalkulator Pinjaman</strong> <u><input type="button" id="clear" value="Bersihkan" onclick="clear()"></u>
       
       <!--Mortgage Calculator-->
       <div class="mortgageCalculator">
-        <label for="amount">Mortgage Amount</label><br>
+        <label for="amount">Jumlah Pinjaman</label><br>
         <div class="simbol" id="simbolAmount">
-          <span class="measuring">&pound;</span>
+          <span class="measuring">Rp</span>
           <input type="number" id="amount">
         </div>
-        <span class="error" id="amountError">This field is required</span>
+        <span class="error" id="amountError">Bagian ini harus diisi</span>
       </div>
 
       <div class="term">
         <div>
-          <label>Mortgage Term</label>
+          <label>Lama Pinjaman</label>
           <div class="simbol" id="simbolYears">
             <input type="number" id="years">
-            <span class="measuring">years</span>
+            <span class="measuring">Tahun</span>
           </div>
-          <span class="error" id="yearsError">This field is required</span>
+          <span class="error" id="yearsError">Bagian ini harus diisi</span>
         </div>
 
         <div>
-          <label for="rate">Interest Rate</label>
+          <label for="rate">Suku Bunga</label>
           <div class="simbol" id="simbolRate">
             <input type="number" id="rate">
             <span class="measuring">%</span>
           </div>
-          <span class="error" id="rateError">This field is required</span>
+          <span class="error" id="rateError">Bagian ini harus diisi</span>
         </div>
       </div>
 
       <div class="radio">
-        <label>Mortgage</label>
+        <label>Jenis Pinjaman</label>
         <div class="radio1">
           <div class="radio-button">
             <input type="radio" name="radio" id="repayment">
-            <label for="repayment">Repayment</label>
+            <label for="repayment">Pembayaran Pokok + Bunga</label>
           </div>
         </div>
 
         <div class="radio2">
           <div class="radio-button">
             <input type="radio" name="radio" id="interestOnly">
-            <label for="interestOnly">Interest Only</label>
+            <label for="interestOnly">Hanya Bunga</label>
           </div>
         </div>
       </div>
-      <span class="error" id="radioError">This field is required</span>
+      <span class="error" id="radioError">Bagian ini harus diisi</span>
 
       <div class="submit">
-        <button type="submit" id="submit"><img src="assets/images/icon-calculator.svg" alt=""> Calculate
-          Repayments</button>
+        <button type="submit" id="submit"><img src="assets/images/icon-calculator.svg" alt=""> Hitung Pembayaran</button>
       </div>
     </div>
 
@@ -94,25 +93,24 @@
       <div class="beforeResultBox" id="beforeResultBox"> 
         <div class="beforeResult" id="beforeResult">
           <img src="assets/images/illustration-empty.svg" alt="">
-          <h3>Result shown here</h3>
-          <p>Complete the form and click “calculate repayments” to</p>
-          <p>see what your monthly repayments would be.</p>
+          <h3>Hasil ditampilkan di sini</h3>
+          <p>Lengkapi formulir dan klik "Hitung Pembayaran" untuk </p>
+          <p>melihat berapa pembayaran bulanan Anda.</p>
         </div>
       </div>
 
       <div class="afterResultBox" id="afterResultBox">
-        <h3>Your result</h3>
-        <p>Your results are shown below based on the information you provided. To adjust the result, edit the form and
-          click "calculate repayment" again</p>
+        <h3>Hasil Anda</h3>
+        <p>Hasil Anda ditampilkan di bwah ini berdasarkan informasi yang Anda berikan. Untuk menyesuaikan hasilnya, edit formulir dan klik "Hitung Angsuran" lagi</p>
         <div class="afterResult">
-          <p>Your monthly repayment</p>
+          <p>Pembayaran Bulanan Anda</p>
           <div class="mountly">
-            <span>&pound;</span><input type="text" id="displayMountly" disabled>
+            <span>Rp</span><input type="text" id="displayMountly" disabled>
           </div>
           <hr>
-          <p>Total you'll repay over the term</p>
+          <p>Total yang akan Anda bayarkan selama masa pinjaman</p>
           <div class="total">
-            <span>&pound;</span><input type="text" id="displayTotal" >
+            <span>Rp</span><input type="text" id="displayTotal" >
           </div>
         </div>
       </div>
